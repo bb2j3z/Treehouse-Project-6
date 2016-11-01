@@ -43,14 +43,29 @@ p {
   text-align: left;
 }
 
+
 a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
   }
-  a:hover {
-    color: #111;
-  }
+  
+a:hover {
+  color: #111;
+}
+
+nav a {
+  transition: 0.6s ease;
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 20px 0;
+}
+
+nav a:hover {
+  border-top: 4px solid #111;
+  border-bottom: 4px solid #111;
+  padding: 6px 0; 
+}
 
 a:hover .nav0 {
 	fill: #111;
