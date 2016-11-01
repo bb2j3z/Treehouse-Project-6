@@ -5,7 +5,29 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url('images/background.png') #edeff0;
+  background: url('svgs/background.svg') #edeff0;
+  background-size: 55px 52px; /* 60px 56px */
+  /* background: url('images/background.png') #edeff0; */
+}
+
+/* /////  Nav ////////// */
+#navIconHome, #navIconContact {
+   height: 13px;	
+}
+#navIconLocation {
+   height: 14px;	
+}
+
+
+#logo_text {
+   display: none;	
+   color: #eaaa7f;
+   margin: 0px;
+}
+
+#logo_paw_print {
+	width: 140px;	
+	height: 120px;
 }
 
 #container {
@@ -29,6 +51,10 @@ a {
   a:hover {
     color: #111;
   }
+
+a:hover .nav0 {
+	fill: #111;
+}
 
 header {
   padding-top: 10px;
@@ -69,9 +95,32 @@ main {
         margin-right: 0;
       }
 
+/* Coat Colors */
+
+#imgCorgiRed, #imgCorgiFawn, #imgCorgiSable, #imgCorgiBlackTan {
+	width: 170px;	
+}
+
+
 footer {
   width: 100%;
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+
+@media(max-width:420px){
+	
+	/* #container {
+		background-color: red;
+	} */
+	
+	#logo_text {
+	   display: block;	
+	}
+	.st1 {
+		display: none;
+	}
+	
 }
